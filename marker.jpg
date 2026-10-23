@@ -1,0 +1,5 @@
+@echo off
+set "marker_file=%TEMP%\marker.txt"
+echo marker written succesfully + %DATE% %TIME% > "%marker_file%"
+echo Marker created successfully at: %marker_file%
+timeout /t 3 /nobreak >nul
